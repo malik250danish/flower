@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florist Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary BigNav p-2">
+        <div class="container-fluid" id="Greennav">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/Logo.png" alt="Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center gap-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Customer Service</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact Us</a></li>
+                </ul>
+          
+                <form class="d-flex align-items-center" role="search">
+                    <div class="input-group search-container">
+                     
+                        <input class="form-control text-light" type="search" placeholder="Search Flowers" aria-label="Search">
+                        <button class="btn btn-outline-success bg-light" type="submit">Search</button>
+                    </div>
+                    <button class="btn btn-light ms-1" type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    <div class="btn-group ms-1" role="group">
+                        <button type="button" class="btn rounded-circle btn-light m-1">繁</button>
+                        <button type="button" class="btn rounded-circle btn-light m-1">简</button>
+                        <button type="button" class="btn rounded-circle btn-light m-1" style="font-size: x-small;">ENG</button>
+                    </div>
+                </form>
+                
+        </div>
+    </nav>
+
+    <!-- Florist Selection and Flower Arrangement Section -->
+    <div class="florist-section">
+        <ul class="list-inline d-flex flex-nowrap overFlowHandle">
+            <li class="list-inline-item"><a href="#">Florist Selection</a></li>
+            <li class="list-inline-item"><a href="#">Flower Arrangements</a></li>
+            <li class="list-inline-item"><a href="#">Congratulations</a></li>
+            <li class="list-inline-item"><a href="#">Hampers</a></li>
+            <li class="list-inline-item"><a href="#">FL. Bouquet</a></li>
+            <li class="list-inline-item"><a href="#">Decoration</a></li>
+            <li class="list-inline-item"><a href="#">New Born Baby Baskets</a></li>
+            <li class="list-inline-item"><a href="#">Silk Flower</a></li>
+            <li class="list-inline-item"><a href="#">Wedding Bouquet</a></li>
+            <li class="list-inline-item"><a href="#">Sympathy</a></li>
+            <li class="list-inline-item"><a href="#">Butterfly Orchids</a></li>
+            <li class="list-inline-item"><a href="#">Men's Gift</a></li>
+        </ul>
+        <!-- Arrow to indicate more items -->
+        <div class="scroll-arrow">
+            <i class="fa fa-arrow-right"></i>
+        </div>
+    </div>
+
+   
+
+    <nav aria-label="breadcrumb" class="breadcrumbs">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page"><a href="./Home.html">Home</a></li> 
+          <li class="breadcrumb-item " aria-current="page"><a href="./Home.html">FI. Bouquet </a></li>
+          <li class="breadcrumb-item " aria-current="page"><a href="./Home.html">Item : B75</a></li>
+        </ol>
+      </nav>
+
+          
+   <div class="container">
+    <div class="row">
+        <div class="col-md-6 my-2">
+            <div class="singleProductCard">
+                <img src="./assets/images/productImage.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-6 my-2">
+            <div>
+                <h3 class="font-m fw-bold">Item : B14</h3>
+            </div>
+        </div>
+    </div>
+   </div>
+
+ <!-- Footer Top Bar -->
+ <div class="footer-top py-3 mt-3">
+    <div class="container">
+        <div class="row text-center text-white">
+            <!-- First Column with Image -->
+            <div class="col-md-2 col-sm-6">
+                <img src="./assets/images/Delivery.png" alt="Delivery" class="footer-icon">
+                <p>Same Day Delivery - Order Before 5PM (Mon-Sat)</p>
+            </div>
+            <!-- Second Column with Image -->
+            <div class="col-md-2 col-sm-6">
+                <img src="./assets/images/delievery.png" alt="Flower Delivery" class="footer-icon">
+                <p>Flower Delivery Across China</p>
+            </div>
+            <!-- Third Column with Image -->
+            <div class="col-md-2 col-sm-6">
+                <img src="./assets/images/slot.png" alt="Delivery Slot" class="footer-icon">
+                <p>Choose Your Preferred Delivery Slot</p>
+            </div>
+
+            <!-- Fourth Column with Image -->
+            <div class="col-md-2 col-sm-6">
+                <img src="./assets/images/rated.png" alt="Delivery Slot" class="footer-icon">
+                <p>Flowers From The Best
+                    Rated Local Florists</p>
+            </div>
+
+            <div class="col-md-2 col-sm-6">
+                <img src="./assets/images/fresh.png" alt="Local Florists" class="footer-icon">
+                <p>Flowers From The Best Rated Local Florists</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Main Footer -->
+    <footer class="footer bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo and QR Code -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <img src="./assets/images/logo2.png" alt="Logo" class="mb-3">
+                    <img src="./assets/images/QR.png" alt="QR Code">
+                </div>
+                <!-- General Information -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>General Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Categories -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Florist Selection</a></li>
+                        <li><a href="#">Flower Arrangements</a></li>
+                        <li><a href="#">Congratulations</a></li>
+                        <li><a href="#">Hampers</a></li>
+                        <li><a href="#">Fl. Bouquet</a></li>
+                        <li><a href="#">Decoration</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mt-5">
+          
+                    <ul class="list-unstyled">
+                        <li><a href="#">New Born Baby Baskets</a></li>
+                        <li><a href="#">Silk Flower</a></li>
+                        <li><a href="#">Wedding Bouquet</a></li>
+                        <li><a href="#">Sympathy</a></li>
+                        <li><a href="#">Men's Gift</a></li>
+                       
+                    </ul>
+                </div>
+                <!-- Contact Information -->
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Contact Us</h5>
+                    <p>(852) 2334 8444</p>
+                    <p>9:00 AM - 9:00 PM (Mon - Sun)</p>
+                    <p>cs@aflowershop.com.hk</p>
+                    <p>Shop F, G/F Phase 1, Kaiser Estate,<br>
+                       41 Man Yue Street, Hung Hom,<br>
+                       Kowloon (Near Loading Dock)</p>
+                    <a href="#" class="btn btn-dark text-light"><i class="fab fa-whatsapp"></i> Chat Now</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom py-3">
+        <div class="container">
+            <p>All contents © A Flower Shop. All rights reserved.</p>
+   
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+        const floristSection = document.querySelector('.florist-section ul');
+        const scrollArrow = document.querySelector('.scroll-arrow');
+
+        function toggleArrowVisibility() {
+            if (floristSection.scrollWidth > floristSection.clientWidth) {
+                scrollArrow.style.display = 'block';
+            } else {
+                scrollArrow.style.display = 'none';
+            }
+        }
+
+        function handleScroll() {
+            const maxScrollLeft = floristSection.scrollWidth - floristSection.clientWidth;
+            if (floristSection.scrollLeft >= maxScrollLeft - 5) {
+                scrollArrow.style.display = 'none';
+            } else {
+                scrollArrow.style.display = 'block';
+            }
+        }
+
+        floristSection.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', toggleArrowVisibility);
+
+        // Initial check
+        toggleArrowVisibility();
+    </script>
+</body>
+</html>

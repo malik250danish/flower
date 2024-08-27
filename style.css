@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* Custom Styles */
+
+.BigNav {
+    background-color: #679966 !important;
+    height: 100px;
+}
+
+#Greennav {
+    padding-left: 65px;
+}
+
+.Logo {
+    padding-left: 200px;
+}
+
+.form-control::placeholder {
+    color: white;
+    font-weight: lighter;
+}
+
+.form-control {
+    border-radius: inherit;
+    background-color: #679966;
+}
+
+
+
+/* Adjust placeholder color and styling */
+.form-control::placeholder {
+    color: white;
+    font-weight: lighter;
+}
+
+/* Custom form control styling */
+.form-control {
+    border-radius: inherit;
+    background-color: #679966;
+}
+
+
+.florist-section {
+    background-color: #F5F5DC;
+    padding: 10px;
+}
+
+.florist-section ul {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.florist-section li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.florist-section a {
+    text-decoration: none;
+    font-size: small;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.florist-section a:hover {
+    background-color: #ddd;
+}
+
+/* Scrollbar styling */
+.florist-section::-webkit-scrollbar {
+    height: 8px;
+}
+
+.florist-section::-webkit-scrollbar-thumb {
+    background-color: #679966;
+    border-radius: 4px;
+}
+
+#navbarSupportedContent {
+    margin-left: 40px;
+
+}
+
+.breadcrumbs {
+    background-color: #F5F5DC;
+
+    padding: 10px;
+}
+
+/* Custom scrollbar styling */
+.florist-section ul {
+    scrollbar-width: thin;
+    scrollbar-color: #00B894 #2D3436;
+    /* Scrollbar thumb and track colors */
+    box-shadow: 0px 7px 13px -11px #181318;
+
+}
+
+.florist-section ul::-webkit-scrollbar {
+    height: 8px;
+}
+
+.florist-section ul::-webkit-scrollbar-track {
+    background: #2D3436;
+    /* Track color */
+}
+
+.florist-section ul::-webkit-scrollbar-thumb {
+    background-color: #00B894;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    border: 2px solid #2D3436;
+    /* Padding around thumb */
+}
+
+/* Full-width banner image */
+.full-width-banner img {
+    width: 100%;
+    /* Makes image full width */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+/* Arrow icon */
+.scroll-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #00B894;
+    display: none;
+    pointer-events: none;
+}
+
+.florist-section {
+    position: relative;
+}
+
+.overFlowHandle {
+    overflow: hidden;
+}
+
+/* General Header Styling */
+header {
+    padding: 10px 0;
+}
+
+header .nav-link {
+    color: #555;
+    font-weight: bold;
+}
+
+header .btn-group .btn {
+    background-color: #e6e6e6;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+.breadcrumb-item a {
+    color: #000 !important;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.font-m {
+    font-family: "Merriweather", serif;
+}
+
+.feaSelect {
+    border: none !important;
+}
+
+hr {
+    color: #E4E4E4;
+    opacity: 1;
+}
+
+.mianheading {
+    background-color: #679966;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.accordion-item {
+    border: none !important;
+    box-shadow: none !important;
+
+}
+
+.accordion-button {
+    font-size: 12px !important;
+    color:
+        #555555 !important;
+    background-color: transparent;
+}
+
+.accordion-button::after {
+    width: 12px;
+    height: 12px;
+    background-size: auto !important;
+}
+
+.accordion-item {
+    background: transparent !important;
+}
+
+.navCard {
+    background-color:
+        #F5F5DC;
+    border: navajowhite;
+}
+
+.flowerFooter {
+    background-color: #F5F5DC;
+}
+
+.flowerCard {
+    border: 1px solid #F5F5DC;
+
+}
+
+.flowerCardImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.fss2 {
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.starFl {
+    font-size: 12px;
+    color: #FF9900;
+}
+
+.sf3 {
+    font-size: 10px;
+    color: #A1A0A0;
+    margin: 0;
+
+}
+
+@media(max-width:1250px) {
+    .overFlowHandle {
+        overflow-x: scroll;
+    }
+}
+
+
+/* new css */
+/* Custom Styles */
+
+.BigNav {
+    background-color: #679966 !important;
+    height: 100px;
+}
+
+#Greennav {
+    padding-left: 65px;
+}
+
+.Logo {
+    padding-left: 200px;
+}
+
+.form-control::placeholder {
+    color: white;
+    font-weight: lighter;
+}
+
+.form-control {
+    border-radius: inherit;
+    background-color: #679966;
+}
+
+
+
+/* Adjust placeholder color and styling */
+.form-control::placeholder {
+    color: white;
+    font-weight: lighter;
+}
+
+/* Custom form control styling */
+.form-control {
+    border-radius: inherit;
+    background-color: #679966;
+}
+
+
+.florist-section {
+    background-color: #F5F5DC;
+    padding: 10px;
+}
+
+.florist-section ul {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.florist-section li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.florist-section a {
+    text-decoration: none;
+    font-size: small;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.florist-section a:hover {
+    background-color: #ddd;
+}
+
+/* Scrollbar styling */
+.florist-section::-webkit-scrollbar {
+    height: 8px;
+}
+
+.florist-section::-webkit-scrollbar-thumb {
+    background-color: #679966;
+    border-radius: 4px;
+}
+
+#navbarSupportedContent {
+    margin-left: 40px;
+
+}
+
+.breadcrumbs {
+    background-color: #F5F5DC;
+
+    padding: 10px;
+}
+
+/* Custom scrollbar styling */
+.florist-section ul {
+    scrollbar-width: thin;
+    scrollbar-color: #00B894 #2D3436;
+    /* Scrollbar thumb and track colors */
+}
+
+.florist-section ul::-webkit-scrollbar {
+    height: 8px;
+}
+
+.florist-section ul::-webkit-scrollbar-track {
+    background: #2D3436;
+    /* Track color */
+}
+
+.florist-section ul::-webkit-scrollbar-thumb {
+    background-color: #00B894;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    border: 2px solid #2D3436;
+    /* Padding around thumb */
+}
+
+/* Full-width banner image */
+.full-width-banner img {
+    width: 100%;
+    /* Makes image full width */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+/* Arrow icon */
+.scroll-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #00B894;
+    display: none;
+    pointer-events: none;
+}
+
+.florist-section {
+    position: relative;
+}
+
+.overFlowHandle {
+    overflow: hidden;
+}
+
+/* General Header Styling */
+header {
+    padding: 10px 0;
+}
+
+header .nav-link {
+    color: #555;
+    font-weight: bold;
+}
+
+header .btn-group .btn {
+    background-color: #e6e6e6;
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+
+/*Shahbaz Css Start*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p.text-center {
+    margin-bottom: 40px;
+    color: #555;
+}
+
+hr {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.card {
+    border: none;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.card-body {
+    background-color: #F5F5DC;
+    padding: 15px;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+.BestSeller {
+    background-color: #f9f9f9;
+}
+
+.BestSeller hr {
+    width: 20%;
+    margin: 10px auto;
+}
+
+.BestSeller .card-body {
+    background-color: FFFFFF;
+    padding: 15px;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.item-code {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item-price {
+
+
+    margin-bottom: 10px;
+}
+
+.item-rating {
+    color: #f39c12;
+}
+
+.stars {
+    color: #f39c12;
+    font-size: 1.2em;
+}
+
+.rating-count {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.Special hr {
+    width: 20%;
+    margin: 10px auto;
+}
+
+.custom-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+    /* Adjust as needed */
+}
+
+.custom-button:hover {
+    background-color: #333;
+    /* Slightly lighter black for hover effect */
+}
+
+.footer-top {
+    background-color: #3e9463;
+    color: white;
+}
+
+.footer-top i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #3e9463;
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8bc34a;
+}
+
+.btn-dark {
+    background-color: black;
+
+    border: none;
+}
+
+.footer-icon {
+    width: 40px;
+    /* Adjust the size as needed */
+    height: 40px;
+    /* Ensure the image remains square */
+    margin-bottom: 10px;
+    /* Adds some space between the image and the text */
+}
+
+.footer-top p {
+    margin-top: 10px;
+    /* Adds some space between the image and the text */
+    font-size: 14px;
+    /* Adjust the font size to match the design */
+    color: white;
+    /* Ensures text is readable */
+}
+
+/*Shahbaz Css End*/
+
+
+@media(max-width:1250px) {
+    .overFlowHandle {
+        overflow-x: scroll;
+    }
+}
+
+.singleProductCard {
+    border: 2px solid #F5F5DC;
+}
+
+.singleProductCard img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* new css end */
