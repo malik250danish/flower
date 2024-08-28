@@ -2,6 +2,10 @@
 /* Custom Styles */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+a {
+    text-decoration: none;
+}
+
 .BigNav {
     background-color: #679966 !important;
     height: 100px;
@@ -25,6 +29,13 @@
     background-color: #679966;
 }
 
+.lang {
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 
 
 /* Adjust placeholder color and styling */
@@ -343,6 +354,11 @@ hr {
 #navbarSupportedContent {
     margin-left: 40px;
 
+}
+
+.btnGeeen {
+    color: #679966 !important;
+    border-radius: 0px !important;
 }
 
 .breadcrumbs {
@@ -684,7 +700,7 @@ thead {
 
 
 /* saad css */
-.aboutshop{
+.aboutshop {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -694,50 +710,50 @@ thead {
     line-height: 35px;
 }
 
-.abouttxt{
+.abouttxt {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.wholeabouttext{
+.wholeabouttext {
     color: #8B898C;
     font-size: medium;
-   
+
 }
 
-.contactus{
+.contactus {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.Cicons{
+.Cicons {
     height: 45px;
     width: 45px;
 }
 
-.cicontxt{
+.cicontxt {
     color: #8B898C;
     font-size: 15px;
 }
 
-.fbottomicons{
+.fbottomicons {
     font-size: large;
 }
 
-.hr{
+.hr {
     width: 100%;
 }
 
-.flower1whole{
+.flower1whole {
     width: 25%;
-   
+
 }
 
-.flower{
+.flower {
     height: 100px;
 }
 
@@ -745,40 +761,40 @@ thead {
     width: 30px;
 } */
 
-.totalprice{
+.totalprice {
     text-align: right;
-    
+
 }
 
-.carttext{
+.carttext {
     color: #8B898C;
     font-size: small;
 }
 
 
-.modalHeader{
+.modalHeader {
     text-align: center;
     background-color: #679966;
 }
 
-.poppurchase{
+.poppurchase {
     text-align: center;
 }
 
-.popflower{
+.popflower {
     border: none;
 }
 
-.desflower{
+.desflower {
     background-color: #F5F5DC;
     /* text-align: center; */
 }
 
-.Description{
+.Description {
     font-size: small;
 }
 
-.popbtn{
+.popbtn {
     background-color: #000000;
     color: #FFFFFF;
     border-radius: 50px;
@@ -790,7 +806,7 @@ thead {
     justify-content: center;
 }
 
-.cancelpopbtn{
+.cancelpopbtn {
     color: #000000;
     background-color: none;
     border-radius: 50px;
@@ -802,13 +818,13 @@ thead {
     justify-content: center;
 }
 
-.poweredpaypal{
+.poweredpaypal {
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.popupbutton{
+.popupbutton {
     background-color: #000000;
     color: white;
     font-size: x-small;
@@ -817,7 +833,9 @@ thead {
     width: 120px;
 }
 
-.size{
+.size {
     height: fit-content;
+    width: fit-content;
 }
+
 /* saad css end */

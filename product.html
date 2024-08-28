@@ -1,725 +1,1428 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Florist Shop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navbar -->
-     <nav class="navbar navbar-expand-lg bg-body-tertiary BigNav p-2">
-        <div class="container-fluid" id="Greennav">
-            <a class="navbar-brand" href="./index.html">
-                <img src="assets/images/Logo.png" alt="Logo" class="img-fluid">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center gap-3" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Home</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">About Us</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Customer Service</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="./contact us.html">Contact Us</a></li>
-                </ul>
-          
-                <form class="d-flex align-items-center" role="search">
-                    <div class="input-group search-container">
-                     
-                        <input class="form-control text-light" type="search" placeholder="Search Flowers" aria-label="Search">
-                        <button class="btn btn-outline-success bg-light" type="submit">Search</button>
-                    </div>
-                    <button class="btn btn-light ms-1" type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                    <div class="btn-group ms-1" role="group">
-                        <button type="button" class="btn rounded-circle btn-light m-1">繁</button>
-                        <button type="button" class="btn rounded-circle btn-light m-1">简</button>
-                        <button type="button" class="btn rounded-circle btn-light m-1" style="font-size: x-small;">ENG</button>
-                    </div>
-                </form>
-                
-        </div>
-    </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary BigNav p-2">
+      <div class="container-fluid" id="Greennav">
+        <a class="navbar-brand" href="./index.html">
+          <img src="assets/images/Logo.png" alt="Logo" class="img-fluid" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center gap-3"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="./index.html"
+                data-i18n="navbar.home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="./About us.html"
+                data-i18n="navbar.about_us"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="#"
+                data-i18n="navbar.customer_service"
+                >Customer Service</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light"
+                href="./contact us.html"
+                data-i18n="navbar.contact_us"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
 
+          <form class="d-flex align-items-center" role="search">
+            <div class="input-group search-container">
+              <input
+                class="form-control text-light"
+                type="search"
+                placeholder="Search Flowers"
+                aria-label="Search"
+                data-i18n="navbar.search_placeholder"
+              />
+              <button
+                class="btn btnGeeen bg-light"
+                type="submit"
+                data-i18n="navbar.search_button"
+              >
+                Search
+              </button>
+            </div>
+            <button class="btn btn-light ms-1" type="button">
+              <i
+                class="fa fa-shopping-cart"
+                style="color: #679966"
+                aria-hidden="true"
+              ></i>
+            </button>
+            <div class="btn-group ms-1" role="group">
+              <button
+                type="button"
+                class="btn rounded-circle lang btn-light m-1"
+                id="btn-traditional"
+              >
+                繁
+              </button>
+              <button
+                type="button"
+                class="btn rounded-circle lang btn-light m-1"
+                id="btn-simplified"
+              >
+                简
+              </button>
+              <button
+                type="button"
+                class="btn rounded-circle lang btn-light m-1"
+                id="btn-eng"
+                style="font-size: x-small"
+              >
+                ENG
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <!-- Florist Selection and Flower Arrangement Section -->
     <div class="florist-section">
-        <ul class="list-inline d-flex flex-nowrap overFlowHandle">
-            <li class="list-inline-item"><a href="#">Florist Selection</a></li>
-            <li class="list-inline-item"><a href="#">Flower Arrangements</a></li>
-            <li class="list-inline-item"><a href="#">Congratulations</a></li>
-            <li class="list-inline-item"><a href="#">Hampers</a></li>
-            <li class="list-inline-item"><a href="#">FL. Bouquet</a></li>
-            <li class="list-inline-item"><a href="#">Decoration</a></li>
-            <li class="list-inline-item"><a href="#">New Born Baby Baskets</a></li>
-            <li class="list-inline-item"><a href="#">Silk Flower</a></li>
-            <li class="list-inline-item"><a href="#">Wedding Bouquet</a></li>
-            <li class="list-inline-item"><a href="#">Sympathy</a></li>
-            <li class="list-inline-item"><a href="#">Butterfly Orchids</a></li>
-            <li class="list-inline-item"><a href="#">Men's Gift</a></li>
-        </ul>
-        <!-- Arrow to indicate more items -->
-        <div class="scroll-arrow">
-            <i class="fa fa-arrow-right"></i>
-        </div>
+      <ul class="list-inline d-flex flex-nowrap overFlowHandle">
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.florist_selection"
+            >Florist Selection</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.flower_arrangements"
+            >Flower Arrangements</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.congratulations"
+            >Congratulations</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.hampers">Hampers</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.fl_bouquet">FL. Bouquet</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.decoration">Decoration</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.new_born_baby_baskets"
+            >New Born Baby Baskets</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.silk_flower">Silk Flower</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.wedding_bouquet"
+            >Wedding Bouquet</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.sympathy">Sympathy</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.butterfly_orchids"
+            >Butterfly Orchids</a
+          >
+        </li>
+        <li class="list-inline-item">
+          <a href="#" data-i18n="florist_section.mens_gift">Men's Gift</a>
+        </li>
+      </ul>
+      <!-- Arrow to indicate more items -->
+      <div class="scroll-arrow">
+        <i class="fa fa-arrow-right"></i>
+      </div>
     </div>
 
     <!-- Full-width Banner Image -->
     <div class="full-width-banner">
-        <img src="./assets/images/floeimage.png" alt="Banner Image">
+      <img src="./assets/images/floeimage.png" alt="Banner Image" />
     </div>
-<!-- breadcrumbs navigation -->
+    <!-- breadcrumbs navigation -->
 
     <nav aria-label="breadcrumb" class="breadcrumbs">
-        <ol class="breadcrumb m-0">
-          <li class="breadcrumb-item m-0 " aria-current="page"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item m-0 " aria-current="page"><a href="./index.html">Fl.Bouquet</a></li>
-        </ol>
-      </nav>
+      <ol class="breadcrumb m-0">
+        <li class="breadcrumb-item m-0" aria-current="page">
+          <a href="./index.html" data-i18n="navbar.home">Home</a>
+        </li>
+        <li class="breadcrumb-item m-0" aria-current="page">
+          <a href="./index.html" data-i18n="florist_section.fl_bouquet"
+            >Fl.Bouquet</a
+          >
+        </li>
+      </ol>
+    </nav>
 
-      <!-- mian  -->
-       <div class="container mt-3">
-        <div class="row ">
-         <div class="col-md-10">
-            <h3 class="font-m fw-bolder">FI. Bouquet</h3>
-         </div>
-           <div class="col-md-2">
-            <select name="" id="" class="form-select feaSelect">
-                <option value="" selected>Features</option>
-            </select>
-           </div>
+    <!-- mian  -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-10">
+          <h3 class="font-m fw-bolder" data-i18n="florist_section.fl_bouquet">
+            FI. Bouquet
+          </h3>
         </div>
+        <div class="col-md-2">
+          <select name="" id="" class="form-select feaSelect">
+            <option value="" selected data-i18n="florist_section.features">
+              Features
+            </option>
+          </select>
+        </div>
+      </div>
 
-        <hr>
-        <div class="row my-2">
+      <hr />
+      <div class="row my-2">
+        <div class="col-md-4 my-2">
+          <div class="card navCard p-3 my-2">
+            <div class="mianheading">
+              <h3
+                class="font-m text-white m-0"
+                data-i18n="florist_section.florist_selection"
+              >
+                Florist Selection
+              </h3>
+            </div>
+            <div class="accordion my-2" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    data-i18n="florist_section.flower_arrangements"
+                  >
+                    Flower Arrangements
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                    data-i18n="florist_section.congratulations"
+                  >
+                    Congratulations
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    data-i18n="florist_section.hampers"
+                  >
+                    Hampers
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree5"
+                    aria-expanded="false"
+                    aria-controls="collapseThree5"
+                    data-i18n="florist_section.fl_bouquet"
+                  >
+                    FI. Bouquet
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOnee"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    data-i18n="florist_section.new_born_baby_baskets"
+                  >
+                    New Born Baby Baskets
+                  </button>
+                </h2>
+                <div
+                  id="collapseOnee"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwoo"
+                    data-i18n="florist_section.silk_flower"
+                  >
+                    Silk Flower
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwoo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreee"
+                    aria-expanded="false"
+                    aria-controls="collapseThreee"
+                    data-i18n="florist_section.wedding_bouquet"
+                  >
+                    Wedding Bouquet
+                  </button>
+                </h2>
+                <div
+                  id="collapseThreee"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    data-i18n="florist_section.sympathy"
+                  >
+                    Sympathy
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    data-i18n="florist_section.butterfly_orchids"
+                  >
+                    Butterfly Orchids
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                    data-i18n="florist_section.mens_gift"
+                  >
+                    Men's Gift
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card navCard p-3 my-2">
+            <div class="mianheading">
+              <h3
+                class="font-m text-white m-0"
+                data-i18n="special_promotion.special-promotion"
+              >
+                Special Promotion
+              </h3>
+            </div>
+            <div class="accordion my-2" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    data-i18n="special_promotion.special-promotion"
+                  >
+                    Special Promotion
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                    data-i18n="special_promotion.mid-autumn-hampers"
+                  >
+                    Mid Autumn Hampers
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    data-i18n="special_promotion.christmas-hampers"
+                  >
+                    Christmas Hampers
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    data-i18n="special_promotion.chinese-new-year-hampers"
+                  >
+                    Chinese New Year Hamper
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    data-i18n="special_promotion.valentine-hampers"
+                  >
+                    Valentine's Day
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                    data-i18n="special_promotion.secretary-day"
+                  >
+                    Happy Secretary Day
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                    data-i18n="special_promotion.mother-day"
+                  >
+                    Happy Mother Day
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p class="fs2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Natus nemo quae architecto sed quisquam necessitatibus
+                      suscipit ipsum fuga, laudantium tempora in voluptate porro
+                      labore consequuntur reprehenderit totam iste voluptatem
+                      consequatur!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 my-2">
+          <div class="row">
             <div class="col-md-4 my-2">
-                <div class="card navCard p-3 my-2">
-                    <div class="mianheading">
-                        <h3 class="font-m  text-white m-0">Florist Selection</h3>
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f1.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
-                    <div class="accordion my-2" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Flower Arrangements
-
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                             <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Congratulations
-
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Hampers
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                     
-                       
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
-                                 
-FI. Bouquet
-
-                              </button>
-                            </h2>
-                            <div id="collapseThree5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                  <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnee" aria-expanded="true" aria-controls="collapseOne">
-                                New Born Baby Baskets
-                              </button>
-                            </h2>
-                            <div id="collapseOnee" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                              </div>
-                            </div>
-                          </div>
-                        
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoo" aria-expanded="false" aria-controls="collapseTwoo">
-                                Silk Flower
-                              </button>
-                            </h2>
-                            <div id="collapseTwoo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                              </div>
-                            </div>
-                          </div>
-                        
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreee" aria-expanded="false" aria-controls="collapseThreee">
-                                Wedding Bouquet
-                              </button>
-                            </h2>
-                            <div id="collapseThreee" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                              </div>
-                            </div>
-                          </div>
-                        
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                Sympathy
-                              </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                              </div>
-                            </div>
-                          </div>
-                        
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Butterfly Orchids
-                              </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                              </div>
-                            </div>
-                          </div>
-                        
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                Men's Gift
-                              </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
+                    <p class="sf3">(40)</p>
+                  </div>
                 </div>
-                <div class="card navCard p-3 my-2">
-                    <div class="mianheading">
-                        <h3 class="font-m  text-white m-0">Special Promotion</h3>
-                    </div>
-                    <div class="accordion my-2" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Special Promotion
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              Mid Autumn Hampers
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Christmas Hampers
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Chinese New Year Hamper
-                            </button>
-                          </h2>
-                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                              Valentine's Day
-                            </button>
-                          </h2>
-                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                              Happy Secretary Day
-                            </button>
-                          </h2>
-                          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                      
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                              Happy Mother Day
-                            </button>
-                          </h2>
-                          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <p class="fs2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nemo quae architecto sed quisquam necessitatibus suscipit ipsum fuga, laudantium tempora in voluptate porro labore consequuntur reprehenderit totam iste voluptatem consequatur!</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-                </div>
+              </a>
             </div>
-            <div class="col-md-8 my-2">
-                <div class="row ">
-                    <div class="col-md-4 my-2">
-                      <a href="./signleproduct.html" class="flowerCard">
-                        <img class="flowerCardImage" src="./assets/images/f1.png" alt="">
-                        <div class="flowerFooter p-2">
-                            <p class="fss2 font-m m-0">Item:B14</p>
-                            <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                          <div class="d-flex align-items-center gap-1">
-                            <div class="starFl">
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            </div>  
-                               <p class="sf3">(40)</p>
-                          </div>
-                        </div>
-                      </a>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f2.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
                     </div>
-                    <div class="col-md-4 my-2">
-                        <a href="./signleproduct.html" class="flowerCard">
-                          <img class="flowerCardImage" src="./assets/images/f2.png" alt="">
-                          <div class="flowerFooter p-2">
-                              <p class="fss2 font-m m-0">Item:B14</p>
-                              <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                            <div class="d-flex align-items-center gap-1">
-                              <div class="starFl">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                              </div>  
-                                 <p class="sf3">(40)</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-4 my-2">
-                        <a href="./signleproduct.html" class="flowerCard">
-                          <img class="flowerCardImage" src="./assets/images/f3.png" alt="">
-                          <div class="flowerFooter p-2">
-                              <p class="fss2 font-m m-0">Item:B14</p>
-                              <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                            <div class="d-flex align-items-center gap-1">
-                              <div class="starFl">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                              </div>  
-                                 <p class="sf3">(40)</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-4 my-2">
-                        <a href="./signleproduct.html" class="flowerCard">
-                          <img class="flowerCardImage" src="./assets/images/f4.png" alt="">
-                          <div class="flowerFooter p-2">
-                              <p class="fss2 font-m m-0">Item:B14</p>
-                              <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                            <div class="d-flex align-items-center gap-1">
-                              <div class="starFl">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                              </div>  
-                                 <p class="sf3">(40)</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-4 my-2">
-                        <a href="./signleproduct.html" class="flowerCard">
-                          <img class="flowerCardImage" src="./assets/images/f5.png" alt="">
-                          <div class="flowerFooter p-2">
-                              <p class="fss2 font-m m-0">Item:B14</p>
-                              <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                            <div class="d-flex align-items-center gap-1">
-                              <div class="starFl">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                              </div>  
-                                 <p class="sf3">(40)</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-4 my-2">
-                        <a href="./signleproduct.html" class="flowerCard">
-                          <img class="flowerCardImage" src="./assets/images/f6.png" alt="">
-                          <div class="flowerFooter p-2">
-                              <p class="fss2 font-m m-0">Item:B14</p>
-                              <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                            <div class="d-flex align-items-center gap-1">
-                              <div class="starFl">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                              </div>  
-                                 <p class="sf3">(40)</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-4 my-2">
-                        <a href="./signleproduct.html" class="flowerCard">
-                          <img class="flowerCardImage" src="./assets/images/f1.png" alt="">
-                          <div class="flowerFooter p-2">
-                              <p class="fss2 font-m m-0">Item:B14</p>
-                              <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                            <div class="d-flex align-items-center gap-1">
-                              <div class="starFl">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                              </div>  
-                                 <p class="sf3">(40)</p>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                      <div class="col-md-4 my-2">
-                          <a href="./signleproduct.html" class="flowerCard">
-                            <img class="flowerCardImage" src="./assets/images/f2.png" alt="">
-                            <div class="flowerFooter p-2">
-                                <p class="fss2 font-m m-0">Item:B14</p>
-                                <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                              <div class="d-flex align-items-center gap-1">
-                                <div class="starFl">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>  
-                                   <p class="sf3">(40)</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-md-4 my-2">
-                          <a href="./signleproduct.html" class="flowerCard">
-                            <img class="flowerCardImage" src="./assets/images/f3.png" alt="">
-                            <div class="flowerFooter p-2">
-                                <p class="fss2 font-m m-0">Item:B14</p>
-                                <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                              <div class="d-flex align-items-center gap-1">
-                                <div class="starFl">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>  
-                                   <p class="sf3">(40)</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-md-4 my-2">
-                          <a href="./signleproduct.html" class="flowerCard">
-                            <img class="flowerCardImage" src="./assets/images/f4.png" alt="">
-                            <div class="flowerFooter p-2">
-                                <p class="fss2 font-m m-0">Item:B14</p>
-                                <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                              <div class="d-flex align-items-center gap-1">
-                                <div class="starFl">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>  
-                                   <p class="sf3">(40)</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-md-4 my-2">
-                          <a href="./signleproduct.html" class="flowerCard">
-                            <img class="flowerCardImage" src="./assets/images/f5.png" alt="">
-                            <div class="flowerFooter p-2">
-                                <p class="fss2 font-m m-0">Item:B14</p>
-                                <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                              <div class="d-flex align-items-center gap-1">
-                                <div class="starFl">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>  
-                                   <p class="sf3">(40)</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-md-4 my-2">
-                          <a href="./signleproduct.html" class="flowerCard">
-                            <img class="flowerCardImage" src="./assets/images/f6.png" alt="">
-                            <div class="flowerFooter p-2">
-                                <p class="fss2 font-m m-0">Item:B14</p>
-                                <small class="fss3 font-m text-muted m-0">Price:$400</small>   
-                              <div class="d-flex align-items-center gap-1">
-                                <div class="starFl">
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                    <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>  
-                                   <p class="sf3">(40)</p>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
+                    <p class="sf3">(40)</p>
+                  </div>
                 </div>
+              </a>
             </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f3.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f4.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f5.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f6.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f1.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f2.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f3.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f4.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f5.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 my-2">
+              <a href="./signleproduct.html" class="flowerCard">
+                <img
+                  class="flowerCardImage"
+                  src="./assets/images/f6.png"
+                  alt=""
+                />
+                <div class="flowerFooter p-2">
+                  <p class="fss2 font-m m-0" data-i18n="best_seller.item-b14">
+                    Item:B14
+                  </p>
+                  <small
+                    class="fss3 font-m text-muted m-0"
+                    data-i18n="best_seller.price5"
+                    >Price:$400</small
+                  >
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="starFl">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="sf3">(40)</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-       </div>
+      </div>
+    </div>
 
-
-           
-<!-- Footer Top Bar -->
-<div class="footer-top py-3 mt-3">
-  <div class="container">
-      <div class="row text-center text-white justify-content-between">
+    <!-- Footer Top Bar -->
+    <div class="footer-top py-3 mt-3">
+      <div class="container">
+        <div class="row text-center text-white justify-content-between">
           <!-- First Column with Image -->
           <div class="col-md-2 col-sm-6">
-              <img src="./assets/images/Delivery.png" alt="Delivery" class="footer-icon">
-              <p>Same Day Delivery - Order Before 5PM (Mon-Sat)</p>
+            <img
+              src="./assets/images/Delivery.png"
+              alt="Delivery"
+              class="footer-icon"
+            />
+            <p data-i18n="footop.same-day-delivery">
+              Same Day Delivery - Order Before 5PM (Mon-Sat)
+            </p>
           </div>
           <!-- Second Column with Image -->
           <div class="col-md-2 col-sm-6">
-              <img src="./assets/images/delievery.png" alt="Flower Delivery" class="footer-icon">
-              <p>Flower Delivery Across China</p>
+            <img
+              src="./assets/images/delievery.png"
+              alt="Flower Delivery"
+              class="footer-icon"
+            />
+            <p data-i18n="footop.flower-delivery-china">
+              Flower Delivery Across China
+            </p>
           </div>
           <!-- Third Column with Image -->
           <div class="col-md-2 col-sm-6">
-              <img src="./assets/images/slot.png" alt="Delivery Slot" class="footer-icon">
-              <p>Choose Your Preferred Delivery Slot</p>
+            <img
+              src="./assets/images/slot.png"
+              alt="Delivery Slot"
+              class="footer-icon"
+            />
+            <p data-i18n="footop.choose-delivery-slot">
+              Choose Your Preferred Delivery Slot
+            </p>
           </div>
 
           <!-- Fourth Column with Image -->
           <div class="col-md-2 col-sm-6">
-              <img src="./assets/images/rated.png" alt="Delivery Slot" class="footer-icon">
-              <p>Flowers From The Best
-                  Rated Local Florists</p>
+            <img
+              src="./assets/images/rated.png"
+              alt="Delivery Slot"
+              class="footer-icon"
+            />
+            <p data-i18n="footop.best-rated-florists">
+              Flowers From The Best Rated Local Florists
+            </p>
           </div>
 
           <div class="col-md-2 col-sm-6">
-              <img src="./assets/images/fresh.png" alt="Local Florists" class="footer-icon">
-              <p>Flowers From The Best Rated Local Florists</p>
+            <img
+              src="./assets/images/fresh.png"
+              alt="Local Florists"
+              class="footer-icon"
+            />
+            <p data-i18n="footop.best-rated-florists">
+              Flowers From The Best Rated Local Florists
+            </p>
           </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-
-  <!-- Main Footer -->
-  <footer class="footer bg-light py-5">
+    <!-- Main Footer -->
+    <footer class="footer bg-light py-5">
       <div class="container">
-          <div class="row">
-              <!-- Logo and QR Code -->
-              <div class="col-lg-2 col-md-6 mb-4">
-                  <img src="./assets/images/logo2.png" alt="Logo" class="mb-3">
-                  <img src="./assets/images/QR.png" alt="QR Code">
-              </div>
-              <!-- General Information -->
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <h5>General Information</h5>
-                  <ul class="list-unstyled mt-5">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Customer Service</a></li>
-                      <li><a href="#">Contact Us</a></li>
-                      <li><a href="#">Terms & Conditions</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
-                  </ul>
-              </div>
-              <!-- Categories -->
-              <div class="col-lg-2 col-md-6 mb-4">
-                  <h5>Categories</h5>
-                  <ul class="list-unstyled mt-5">
-                      <li><a href="#">Florist Selection</a></li>
-                      <li><a href="#">Flower Arrangements</a></li>
-                      <li><a href="#">Congratulations</a></li>
-                      <li><a href="#">Hampers</a></li>
-                      <li><a href="#">Fl. Bouquet</a></li>
-                      <li><a href="#">Decoration</a></li>
-                     
-                  </ul>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4 mt-5">
-        
-                  <ul class="list-unstyled mt-4">
-                      <li><a href="#">New Born Baby Baskets</a></li>
-                      <li><a href="#">Silk Flower</a></li>
-                      <li><a href="#">Wedding Bouquet</a></li>
-                      <li><a href="#">Sympathy</a></li>
-                      <li><a href="#">Men's Gift</a></li>
-                     
-                  </ul>
-              </div>
-              <!-- Contact Information -->
-              <div class="col-lg-2 col-md-6 mb-4">
-
-                      <h5>Contact Us</h5>
-                  <ul class="list-unstyled mt-5">    
-                      <p>(852) 2334 8444</p>
-                      <p>9:00 AM - 9:00 PM (Mon - Sun)</p>
-                      <p>cs@aflowershop.com.hk</p>
-                      <p>Shop F, G/F Phase 1, Kaiser Estate,<br>
-                         41 Man Yue Street, Hung Hom,<br>
-                         Kowloon (Near Loading Dock)</p>
-                      <a href="#" class="btn btn-dark text-light"><i class="fab fa-whatsapp"></i> Chat Now</a>
-                  </ul>
-              </div>
+        <div class="row">
+          <!-- Logo and QR Code -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <img src="./assets/images/logo2.png" alt="Logo" class="mb-3" />
+            <img src="./assets/images/QR.png" alt="QR Code" />
           </div>
+          <!-- General Information -->
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 data-i18n="Gm.general-information">General Information</h5>
+            <ul class="list-unstyled mt-5">
+              <li><a href="#" data-i18n="navbar.home">Home</a></li>
+              <li><a href="#" data-i18n="navbar.about_us">About Us</a></li>
+              <li>
+                <a href="#" data-i18n="navbar.customer_service"
+                  >Customer Service</a
+                >
+              </li>
+              <li><a href="#" data-i18n="navbar.contact_us">Contact Us</a></li>
+              <li>
+                <a href="#" data-i18n="Gm.terms-conditions"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="Gm.privacy-policy">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Categories -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 data-i18n="Gm.categories">Categories</h5>
+            <ul class="list-unstyled mt-5">
+              <li>
+                <a href="#" data-i18n="florist_section.florist_selection"
+                  >Florist Selection</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.flower_arrangements"
+                  >Flower Arrangements</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.congratulations"
+                  >Congratulations</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.hampers">Hampers</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.fl_bouquet"
+                  >Fl. Bouquet</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.decoration"
+                  >Decoration</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mt-5">
+            <ul class="list-unstyled mt-4">
+              <li>
+                <a href="#" data-i18n="florist_section.new_born_baby_baskets"
+                  >New Born Baby Baskets</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.silk_flower"
+                  >Silk Flower</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.wedding_bouquet"
+                  >Wedding Bouquet</a
+                >
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.sympathy">Sympathy</a>
+              </li>
+              <li>
+                <a href="#" data-i18n="florist_section.mens_gift">Men's Gift</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Information -->
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h5 data-i18n="navbar.contact_us">Contact Us</h5>
+            <ul class="list-unstyled mt-5">
+              <p>(852) 2334 8444</p>
+              <p data-i18n="footmid.working-hours">
+                9:00 AM - 9:00 PM (Mon - Sun)
+              </p>
+              <p>cs@aflowershop.com.hk</p>
+              <p data-i18n="footmid.address">
+                Shop F, G/F Phase 1, Kaiser Estate,<br />
+                41 Man Yue Street, Hung Hom,<br />
+                Kowloon (Near Loading Dock)
+              </p>
+              <a
+                href="#"
+                class="btn btn-dark text-light"
+                data-i18n="footmid.chat-now"
+                ><i class="fab fa-whatsapp"></i> Chat Now</a
+              >
+            </ul>
+          </div>
+        </div>
       </div>
-  </footer>
+    </footer>
 
-  <!-- Footer Bottom Bar -->
-  <div class="footer-bottom p-5 py-3 d-flex">
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom p-5 py-3 d-flex">
       <div class="container">
-          <p>All contents © A Flower Shop. All rights reserved.</p>
- 
+        <p data-i18n="footer.footer-rights">
+          All contents © A Flower Shop. All rights reserved.
+        </p>
       </div>
       <div class="fbottomicons text-black">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-square-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid fa-envelope"></i>
       </div>
-  </div>
+    </div>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
-        const floristSection = document.querySelector('.florist-section ul');
-        const scrollArrow = document.querySelector('.scroll-arrow');
+      const floristSection = document.querySelector(".florist-section ul");
+      const scrollArrow = document.querySelector(".scroll-arrow");
 
-        function toggleArrowVisibility() {
-            if (floristSection.scrollWidth > floristSection.clientWidth) {
-                scrollArrow.style.display = 'block';
-            } else {
-                scrollArrow.style.display = 'none';
-            }
+      function toggleArrowVisibility() {
+        if (floristSection.scrollWidth > floristSection.clientWidth) {
+          scrollArrow.style.display = "block";
+        } else {
+          scrollArrow.style.display = "none";
         }
+      }
 
-        function handleScroll() {
-            const maxScrollLeft = floristSection.scrollWidth - floristSection.clientWidth;
-            if (floristSection.scrollLeft >= maxScrollLeft - 5) {
-                scrollArrow.style.display = 'none';
-            } else {
-                scrollArrow.style.display = 'block';
-            }
+      function handleScroll() {
+        const maxScrollLeft =
+          floristSection.scrollWidth - floristSection.clientWidth;
+        if (floristSection.scrollLeft >= maxScrollLeft - 5) {
+          scrollArrow.style.display = "none";
+        } else {
+          scrollArrow.style.display = "block";
         }
+      }
 
-        floristSection.addEventListener('scroll', handleScroll);
-        window.addEventListener('resize', toggleArrowVisibility);
+      floristSection.addEventListener("scroll", handleScroll);
+      window.addEventListener("resize", toggleArrowVisibility);
 
-        // Initial check
-        toggleArrowVisibility();
+      // Initial check
+      toggleArrowVisibility();
     </script>
-</body>
+    <script src="https://unpkg.com/i18next@21.8.10/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.5/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.1/i18nextHttpBackend.min.js"></script>
+    <!-- an example can be found in example/jquery/index.html -->
+
+    <script>
+      i18next
+        .use(i18nextHttpBackend)
+        .use(i18nextBrowserLanguageDetector)
+        .init(
+          {
+            debug: true,
+            fallbackLng: "en",
+            backend: {
+              loadPath: "./assets/locales/{{lng}}/translation.json",
+            },
+          },
+          function (err, t) {
+            // Initialize translations
+            updateContent();
+          }
+        );
+
+      // Function to update the content
+      function updateContent() {
+        document.querySelectorAll("[data-i18n]").forEach(function (element) {
+          // Check if the element is an input field or other elements like buttons
+          if (element.hasAttribute("placeholder")) {
+            element.setAttribute(
+              "placeholder",
+              i18next.t(element.getAttribute("data-i18n"))
+            );
+          } else {
+            element.innerHTML = i18next.t(element.getAttribute("data-i18n"));
+          }
+        });
+      }
+
+      // Language change handlers
+      document
+        .getElementById("btn-traditional")
+        .addEventListener("click", function () {
+          i18next.changeLanguage("zh-TW", updateContent); // Correctly specifying Traditional Chinese
+        });
+
+      document
+        .getElementById("btn-simplified")
+        .addEventListener("click", function () {
+          i18next.changeLanguage("zh-CN", updateContent); // Correctly specifying Simplified Chinese
+        });
+
+      document.getElementById("btn-eng").addEventListener("click", function () {
+        i18next.changeLanguage("en", updateContent); // English
+      });
+    </script>
+  </body>
 </html>

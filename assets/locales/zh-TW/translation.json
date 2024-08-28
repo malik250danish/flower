@@ -9,6 +9,7 @@
   },
   "florist_section": {
     "florist_selection": "花藝師選擇",
+    "special": "我們是一家專業的全方位服務花店，提供獨特的 花藝設計和佈置的風格。無論您發送到何處  您的鮮花，我們保證與我們相同的品質和新鮮度 從我們的商店提供。",
     "flower_arrangements": "花藝佈置",
     "congratulations": "祝賀",
     "hampers": "禮籃",
@@ -19,6 +20,116 @@
     "wedding_bouquet": "婚禮花束",
     "sympathy": "慰問",
     "butterfly_orchids": "蝴蝶蘭",
-    "mens_gift": "男士禮物"
+    "mens_gift": "男士禮物",
+    "features": "特徵"
+  },
+  "best_seller": {
+    "best-sellers": "暢銷商品",
+    "item-b72": "貨號：B72",
+    "price": "價格：港幣1000元",
+    "item-we25": "貨號：WE25",
+    "price2": "價格：港幣980元",
+    "item-c39": "貨號：C39",
+    "price3": "價格：港幣2630元",
+    "item-a29": "貨號：A29",
+    "price4": "價格：港幣820元",
+    "item-b14": "貨號：B14",
+    "price5": "價格：400 美元"
+  },
+
+  "special_promotion": {
+    "special-promotion": "特別促銷",
+    "mid-autumn-hampers": "中秋禮籃",
+    "christmas-hampers": "聖誕禮籃",
+    "chinese-new-year-hampers": "春節禮籃",
+    "valentine-hampers": "情人節禮籃",
+    "secretary-day": "秘書日快樂",
+    "mother-day": "母親節快樂",
+    "load-more": "加載更多"
+  },
+  "footop": {
+    "same-day-delivery": "當日送達 - 請在下午5點前下單 (周一至周六)",
+    "flower-delivery-china": "全中國鮮花速遞",
+    "choose-delivery-slot": "選擇您的首選送貨時間段",
+    "best-rated-florists": "來自最高評分的當地花店的鮮花"
+  },
+  "Gm": {
+    "general-information": "般信息",
+    "terms-conditions": "條款與條件",
+    "privacy-policy": "隱私政策",
+    "categories": "類別"
+  },
+  "footmid": {
+    "working-hours": "9:00 AM - 9:00 PM (周一至周日)",
+    "chat-now": "現在聊天",
+    "address": "九龍紅磡民裕街41號凱旋工商中心第一期地下F舖(近卸貨碼頭)"
+  },
+  "footer": {
+    "footer-rights": "所有內容 © A Flower Shop。保留所有權利。"
+  },
+  "cart": {
+    "title": "購物車",
+    "product": "產品",
+    "quantity": "數量",
+    "price": "價格",
+    "product1": "永恆紅玫瑰",
+    "product1Details": "選擇尺寸：標準 地點：西馬來西亞",
+    "product2": "永恆紅玫瑰",
+    "product2Details": "選擇尺寸：標準 地點：西馬來西亞",
+    "priceValue1": "HK$ 520",
+    "priceValue2": "HK$ 520",
+    "totalPrice": "總價：HK$1040",
+    "proceedToPay": "進行支付",
+    "modalTitle": "花店",
+    "purchaseDetails": "購買詳情",
+    "descriptionLabel": "描述",
+    "currencyLabel": "港幣",
+    "quantityLabel": "數量",
+    "continue": "繼續",
+    "cancel": "取消",
+    "poweredBy": "技術支持"
+  },
+
+  "product": {
+    "item": "項目 : B14",
+    "price": "價格 : HK$ 850",
+    "reviews": "(40)",
+    "detailsTitle": "詳情",
+    "detailsDescription": "一束紅玫瑰搭配白色石竹。精心包裝的花束，適合任何場合，紅玫瑰象徵你的熱情、真愛和渴望，而白色石竹則表達了你最真誠的心意。這是表達你愛意和心意的不二之選。",
+    "sizeTitle": "尺寸:",
+    "addToCart": "加入購物車"
+  },
+
+  "about": {
+    "title": "關於花店",
+    "description": "花卉不僅僅是一份禮物；它們是心靈的語言，是傳達情感和加深彼此聯繫的方式。多年的花卉贈送傳統正是因為這個原因而繁榮，作為當言語無法表達時的完美媒介。物流困難的日子已經過去。在 Flower Chimp，我們利用現代科技和遍布馬來西亞的精選花卉網絡，使花卉贈送成為一個輕鬆而有意義的體驗。只需幾次點擊，您現在可以發送華麗的花束，讓贈送的行為與花束本身一樣令人愉悅。"
+  },
+  "flowerchimp": {
+    "title": "Flower Chimp 跨越邊界",
+    "description": "一束紅玫瑰搭配白色石竹。精心包裝的花束，適合任何場合，紅玫瑰象徵您的熱情、真愛和渴望，而白色石竹則表達了您最真誠的心意。這是表達愛意和意圖的首選禮物，不需要說一句話。"
+  },
+  "brand": {
+    "title": "我們品牌的力量",
+    "description": "一束紅玫瑰搭配白色石竹。精心包裝的花束，適合任何場合，紅玫瑰象徵您的熱情、真愛和渴望，而白色石竹則表達了您最真誠的心意。這是表達愛意和意圖的首選禮物，不需要說一句話。"
+  },
+
+  "contact": {
+    "title": "聯繫我們",
+    "customer_service_hours_title": "客戶服務時間：",
+    "customer_service_hours": "上午9:00 - 晚上9:00（星期一至星期日）",
+    "address_title": "地址：",
+    "address": "香港九龍紅磡民悅街41號凱旋大廈1期地下F舖。",
+    "telephone_title": "電話：",
+    "telephone": "(852) 2334 8444",
+    "fax_title": "傳真：",
+    "fax": "(852) 2334 6444",
+    "wechat_title": "微信：",
+    "wechat": "Afs23348444",
+    "email_title": "電郵：",
+    "email": "cs@aflowershop.com.hk",
+    "whatsapp_title": "WhatsApp：",
+    "whatsapp": "+85223348444",
+    "facebook_title": "Facebook：",
+    "facebook": "http://www.facebook.com/pages/A-Flower-Shop/86139177592"
   }
 }

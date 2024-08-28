@@ -5,10 +5,11 @@
     "customer_service": "Customer Service",
     "contact_us": "Contact Us",
     "search_placeholder": "Search Flowers",
-      "search_button": "Search"
+    "search_button": "Search"
   },
   "florist_section": {
     "florist_selection": "Florist Selection",
+    "special": "  We are a specialized full service floral shop which provides unique style in floral design and arrangements. Regardless of wherever you send your flowers, we guarantee of the same quality and freshness we would provide from our shop.",
     "flower_arrangements": "Flower Arrangements",
     "congratulations": "Congratulations",
     "hampers": "Hampers",
@@ -19,6 +20,117 @@
     "wedding_bouquet": "Wedding Bouquet",
     "sympathy": "Sympathy",
     "butterfly_orchids": "Butterfly Orchids",
-    "mens_gift": "Men's Gift"
+    "mens_gift": "Men's Gift",
+    "features": "Features"
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+
+  "best_seller": {
+    "best-sellers": "The Best Sellers",
+    "item-b72": "Item: B72",
+    "price": "Price: HK$ 1000",
+    "item-we25": "Item: WE25",
+    "price2": "Price: HK$ 980",
+    "item-c39": "Item: C39",
+    "price3": "Price: HK$ 2630",
+    "item-a29": "Item: A29",
+    "price4": "Price: HK$ 820",
+    "item-b14": "Item: B14",
+    "price5": "Price: $400"
+  },
+  "special_promotion": {
+    "special-promotion": "Special Promotion",
+    "mid-autumn-hampers": "Mid Autumn Hampers",
+    "christmas-hampers": "Christmas Hampers",
+    "chinese-new-year-hampers": "Chinese New Year Hamper",
+    "valentine-hampers": "Valentine's Hamper",
+    "secretary-day": "Happy Secretary day",
+    "mother-day": "Happy Mothers day",
+    "load-more": "Load More"
+  },
+  "footop": {
+    "same-day-delivery": "Same Day Delivery - Order Before 5PM (Mon-Sat)",
+    "flower-delivery-china": "Flower Delivery Across China",
+    "choose-delivery-slot": "Choose Your Preferred Delivery Slot",
+    "best-rated-florists": "Flowers From The Best Rated Local Florists"
+  },
+  "Gm": {
+    "general-information": "General Information",
+    "terms-conditions": "Terms & Conditions",
+    "privacy-policy": "Privacy Policy",
+    "categories": "Categories"
+  },
+  "footmid": {
+    "working-hours": "9:00 AM - 9:00 PM (Mon - Sun)",
+    "address": " Shop F, G/F Phase 1, Kaiser Estate, 41 Man Yue Street, Hung Hom, Kowloon (Near Loading Dock)",
+    "chat-now": "Chat Now"
+  },
+  "footer": {
+    "footer-rights": "All contents © A Flower Shop. All rights reserved."
+  },
+
+  "cart": {
+    "title": "Shopping Cart",
+    "product": "Product",
+    "quantity": "Quantity",
+    "price": "Price",
+    "product1": "Red Roses Forever",
+    "product1Details": "Choose a Size: Standard Location: West Malaysia",
+    "product2": "Red Roses Forever",
+    "product2Details": "Choose a Size: Standard Location: West Malaysia",
+    "priceValue1": "HK$ 520",
+    "priceValue2": "HK$ 520",
+    "totalPrice": "Total Price: HK$1040",
+    "proceedToPay": "Proceed to Pay",
+    "modalTitle": "A Flower Shop",
+    "purchaseDetails": "Purchase Details",
+    "descriptionLabel": "Description",
+    "currencyLabel": "HKD",
+    "quantityLabel": "Quantity",
+    "continue": "Continue",
+    "cancel": "Cancel",
+    "poweredBy": "powered by"
+  },
+  "product": {
+    "item": "Item : B14",
+    "price": "Price : HK$ 850",
+    "reviews": "(40)",
+    "detailsTitle": "Details",
+    "detailsDescription": "A bouquet of red roses accompanied by white statice. A bouquet wrapped to perfection and suitable for any occasions as red roses simply symbolizes your passion, true love and desire while leaving the white statice to portray your utmost sincerity. This is the go-to gift that expresses your love and intentions without having to say a word.",
+    "sizeTitle": "Size:",
+    "addToCart": "Add To Cart"
+  },
+  "about": {
+    "title": "About a Flower Shop",
+    "description": "Flowers are more than just a gift; they are a heartfelt language, a way to communicate emotions and deepen connections with one another. The tradition of giving flowers has thrived over the years for this very reason, serving as the perfect medium to convey messages when words fall short. Gone are the days when logistical hurdles marred this beautiful expression. At Flower Chimp, we harness modern technology and an expansive network of handpicked florists across Malaysia to make flower giving an effortless, yet meaningful experience. With just a few clicks, you can now send stunning bouquets that speak volumes, making the act of giving as delightful as the bouquet itself."
+  },
+  "flowerchimp": {
+    "title": "Flower Chimp across Borders",
+    "description": "A bouquet of red roses accompanied by white statice. A bouquet wrapped to perfection and suitable for any occasions as red roses simply symbolizes your passion, true love and desire while leaving the white statice to portray your utmost sincerity. This is the go-to gift that expresses your love and intentions without having to say a word."
+  },
+  "brand": {
+    "title": "The power of our Brand",
+    "description": "A bouquet of red roses accompanied by white statice. A bouquet wrapped to perfection and suitable for any occasions as red roses simply symbolizes your passion, true love and desire while leaving the white statice to portray your utmost sincerity. This is the go-to gift that expresses your love and intentions without having to say a word."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "customer_service_hours_title": "Customer service hours:",
+    "customer_service_hours": "9:00 am - 9:00 pm (Monday to Sunday)",
+    "address_title": "Address:",
+    "address": "Shop F, G/F Phase 1, Kaiser Estate, 41 Man Yue Street, Hung Hom, Kowloon, Hong Kong.",
+    "telephone_title": "Telephone:",
+    "telephone": "(852) 2334 8444",
+    "fax_title": "Fax:",
+    "fax": "(852) 2334 6444",
+    "wechat_title": "WeChat:",
+    "wechat": "Afs23348444",
+    "email_title": "Email:",
+    "email": "cs@aflowershop.com.hk",
+    "whatsapp_title": "WhatsApp:",
+    "whatsapp": "+85223348444",
+    "facebook_title": "Facebook:",
+    "facebook": "http://www.facebook.com/pages/A-Flower-Shop/86139177592"
   }
 }
