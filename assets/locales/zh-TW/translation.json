@@ -1,0 +1,24 @@
+{
+  "navbar": {
+    "home": "首頁",
+    "about_us": "關於我們",
+    "customer_service": "客戶服務",
+    "contact_us": "聯絡我們",
+    "search_placeholder": "搜尋花卉",
+    "search_button": "搜尋"
+  },
+  "florist_section": {
+    "florist_selection": "花藝師選擇",
+    "flower_arrangements": "花藝佈置",
+    "congratulations": "祝賀",
+    "hampers": "禮籃",
+    "fl_bouquet": "花束",
+    "decoration": "裝飾",
+    "new_born_baby_baskets": "新生嬰兒籃",
+    "silk_flower": "絲花",
+    "wedding_bouquet": "婚禮花束",
+    "sympathy": "慰問",
+    "butterfly_orchids": "蝴蝶蘭",
+    "mens_gift": "男士禮物"
+  }
+}

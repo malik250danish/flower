@@ -1,0 +1,24 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about_us": "About Us",
+    "customer_service": "Customer Service",
+    "contact_us": "Contact Us",
+    "search_placeholder": "Search Flowers",
+      "search_button": "Search"
+  },
+  "florist_section": {
+    "florist_selection": "Florist Selection",
+    "flower_arrangements": "Flower Arrangements",
+    "congratulations": "Congratulations",
+    "hampers": "Hampers",
+    "fl_bouquet": "FL. Bouquet",
+    "decoration": "Decoration",
+    "new_born_baby_baskets": "New Born Baby Baskets",
+    "silk_flower": "Silk Flower",
+    "wedding_bouquet": "Wedding Bouquet",
+    "sympathy": "Sympathy",
+    "butterfly_orchids": "Butterfly Orchids",
+    "mens_gift": "Men's Gift"
+  }
+}

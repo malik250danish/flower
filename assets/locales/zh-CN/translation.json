@@ -1,0 +1,24 @@
+{
+  "navbar": {
+    "home": "首页",
+    "about_us": "关于我们",
+    "customer_service": "客户服务",
+    "contact_us": "联系我们",
+    "search_placeholder": "搜索花卉",
+    "search_button": "搜索"
+  },
+  "florist_section": {
+    "florist_selection": "花艺师选择",
+    "flower_arrangements": "花艺布置",
+    "congratulations": "祝贺",
+    "hampers": "礼篮",
+    "fl_bouquet": "花束",
+    "decoration": "装饰",
+    "new_born_baby_baskets": "新生婴儿篮",
+    "silk_flower": "丝花",
+    "wedding_bouquet": "婚礼花束",
+    "sympathy": "慰问",
+    "butterfly_orchids": "蝴蝶兰",
+    "mens_gift": "男士礼物"
+  }
+}
