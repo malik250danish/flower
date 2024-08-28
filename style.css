@@ -8,7 +8,7 @@ a {
 
 .BigNav {
     background-color: #679966 !important;
-    height: 100px;
+    min-height: 100px;
 }
 
 #Greennav {
@@ -273,14 +273,8 @@ hr {
 /* new css */
 /* Custom Styles */
 
-.BigNav {
-    background-color: #679966 !important;
-    height: 100px;
-}
 
-#Greennav {
-    padding-left: 65px;
-}
+
 
 .Logo {
     padding-left: 200px;
@@ -839,3 +833,13 @@ thead {
 }
 
 /* saad css end */
+@media(max-width:992px) {
+    #Greennav {
+        padding-left: 0 !important;
+    }
+
+    .BigNav form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
