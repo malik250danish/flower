@@ -528,7 +528,7 @@ h2 {
     border: none;
     padding: 10px 20px;
 
-    width: 15%;
+    /* width: 15%; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -536,7 +536,7 @@ h2 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 20px;
-}
+}s
 
 .mt-4 {
     margin-top: 1.5rem;
