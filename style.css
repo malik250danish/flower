@@ -832,6 +832,25 @@ thead {
     width: fit-content;
 }
 
+.envl {
+    background: #F5F5DC;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnbgS {
+    background-color: #F5F5DC !important;
+    border: 1px solid #679966 !important
+}
+
+.btnr {
+    background-color: #679966 !important;
+    color: #fff
+}
+
 /* saad css end */
 @media(max-width:992px) {
     #Greennav {

@@ -21,6 +21,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <!-- Toastr CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -98,13 +103,13 @@
                 Search
               </button>
             </div>
-            <button class="btn btn-light ms-1" type="button">
+            <a href="./shoppingcart.html" class="btn btn-light ms-1">
               <i
                 class="fa fa-shopping-cart"
                 style="color: #679966"
                 aria-hidden="true"
               ></i>
-            </button>
+            </a>
             <div class="btn-group ms-1" role="group">
               <button
                 type="button"
@@ -259,12 +264,19 @@
                   ></span>
                 </div>
               </div>
-              <a
+              <!-- <a
                 href="./shoppingcart.html"
                 class="btn btnCart btn-dark font-lato px-3 mt-3"
                 data-i18n="product.addToCart"
                 >Add To Cart</a
+              > -->
+              <button
+                class="btn btnCart btn-dark font-lato px-3 mt-3"
+                data-i18n="product.addToCart"
+                onclick="addToCart()"
               >
+                Add To Cart
+              </button>
             </div>
           </div>
         </div>
@@ -460,11 +472,21 @@
         </p>
       </div>
       <div class="fbottomicons text-black">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-solid fa-envelope"></i>
+        <a
+          class="text-black"
+          href="http://www.facebook.com/pages/A-Flower-Shop/86139177592"
+        >
+          <i class="fa-brands fa-facebook"></i
+        ></a>
+        <!-- <i class="fa-brands fa-youtube"></i> -->
+        <!-- <i class="fa-brands fa-square-instagram"></i> -->
+        <a class="text-black" href="https://wa.me/85223348444" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a class="text-black" href="mailto:cs@aflowershop.com.hk">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
     </div>
 
@@ -592,6 +614,31 @@
       document.getElementById("btn-eng").addEventListener("click", function () {
         i18next.changeLanguage("en", updateContent); // English
       });
+    </script>
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      function addToCart() {
+        // Prevent the default anchor behavior
+
+        // Show SweetAlert notification
+        Swal.fire({
+          title: "Success!",
+          text: "Item successfully added to cart",
+          icon: "success",
+          confirmButtonText: "Go TO Cart",
+          timer: 3000, // Auto close after 3 seconds
+          timerProgressBar: true,
+          showCloseButton: true,
+          position: "top-center", // Position at the top-right corner
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Redirect to the cart page
+            window.location.href = "./shoppingcart.html";
+          }
+        });
+      }
     </script>
   </body>
 </html>
