@@ -65,7 +65,7 @@
   "footmid": {
     "working-hours": "9:00 AM - 9:00 PM (Mon - Sun)",
     "address": " Shop F, G/F Phase 1, Kaiser Estate, 41 Man Yue Street, Hung Hom, Kowloon (Near Loading Dock)",
-    "chat-now": "Chat Now"
+    "chat-now": "<i class='fa fa-commenting' aria-hidden='true'></i> Chat Now"
   },
   "footer": {
     "footer-rights": "All contents © A Flower Shop. All rights reserved."
@@ -108,18 +108,17 @@
     "description1": "Our company was established in May 2005 and is located in the central business district of Hung Hom. We appreciate your support and feedback. With a focus on our products, customer needs, and high-quality services, we are committed to continual improvement. Our store uses the three elements of Art, Life, and Culture to create an alternative flower arrangement culture and aims to hire more new talented floral designers. To contribute to society, non-profit organizations are eligible for cost price or a minimum 10% discount.",
     "contact_info": "For further information, please contact us at 852-23348444",
     "name": "Senior Florist--Pauline Chan",
-    "exp1":" 1995-1997 Greenfingers Florist Co., Ltd.",
-  "exp2":"2002-2002 Silk Art Florist",
-  "exp3":"1999-2002 The Wicker Express",
-  "exp4":"2002-2002 Silk Art Florist",
-  "exp5":"2002-2003 Flower Fountain Limited",
-  "exp6":"2003-2005 Kowloon Shangri-La -- Part-time",
-  "exp7":"Gary Florist -- Part-time",
-  "exp8":"Evergreen Floral Design -- Part-time",
-  "exp9":"The Wicker Express -- Part-time",
-  "exp10":"Flower Fountain Limited -- Part-time",
-  "exp11":"A Flower Shop"
-
+    "exp1": " 1995-1997 Greenfingers Florist Co., Ltd.",
+    "exp2": "2002-2002 Silk Art Florist",
+    "exp3": "1999-2002 The Wicker Express",
+    "exp4": "2002-2002 Silk Art Florist",
+    "exp5": "2002-2003 Flower Fountain Limited",
+    "exp6": "2003-2005 Kowloon Shangri-La -- Part-time",
+    "exp7": "Gary Florist -- Part-time",
+    "exp8": "Evergreen Floral Design -- Part-time",
+    "exp9": "The Wicker Express -- Part-time",
+    "exp10": "Flower Fountain Limited -- Part-time",
+    "exp11": "A Flower Shop"
   },
   "flowerchimp": {
     "title": "Flower Chimp across Borders",

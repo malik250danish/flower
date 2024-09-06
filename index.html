@@ -47,7 +47,7 @@
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a
-                class="nav-link active text-light"
+                class="nav-link text-light"
                 aria-current="page"
                 href="./index.html"
                 data-i18n="navbar.home"
@@ -57,7 +57,7 @@
             <li class="nav-item">
               <a
                 class="nav-link text-light"
-                href="./About us.html"
+                href="./Aboutus.html"
                 data-i18n="navbar.about_us"
                 >About Us</a
               >
@@ -73,7 +73,7 @@
             <li class="nav-item">
               <a
                 class="nav-link text-light"
-                href="./contact us.html"
+               href="./contactus.html"
                 data-i18n="navbar.contact_us"
                 >Contact Us</a
               >
@@ -584,7 +584,8 @@
               <img
                 src="./assets/images/scretary.jpg"
                 class="card-img-top"
-                alt="Flower Arrangements" style="height: 250px;"
+                alt="Flower Arrangements"
+                style="height: 250px"
               />
               <!-- <div class="card-body">
                 <p
@@ -600,9 +601,10 @@
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <a href="./product.html" class="card">
               <img
-              src="./assets/images/scretary.jpg"
+                src="./assets/images/scretary.jpg"
                 class="card-img-top"
-                alt="Congratulations" style="height: 250px;"
+                alt="Congratulations"
+                style="height: 250px"
               />
               <!-- <div class="card-body">
                 <p
@@ -617,9 +619,10 @@
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <a href="./product.html" class="card">
               <img
-              src="./assets/images/scretary.jpg"
-                class="card-img-top" 
-                alt="Hampers" style="height: 250px;"
+                src="./assets/images/scretary.jpg"
+                class="card-img-top"
+                alt="Hampers"
+                style="height: 250px"
               />
               <!-- <div class="card-body">
                 <p
@@ -635,9 +638,10 @@
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <a href="./product.html" class="card">
               <img
-              src="./assets/images/scretary.jpg"
+                src="./assets/images/scretary.jpg"
                 class="card-img-top"
-                alt="FL. Bouquet" style="height: 250px;"
+                alt="FL. Bouquet"
+                style="height: 250px"
               />
               <!-- <div class="card-body">
                 <p
@@ -680,7 +684,7 @@
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <a href="./product.html" class="card">
               <img
-              src="./assets/images/mothersday.jpg"
+                src="./assets/images/mothersday.jpg"
                 class="card-img-top"
                 alt="Congratulations"
               />
@@ -697,7 +701,7 @@
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <a href="./product.html" class="card">
               <img
-              src="./assets/images/mothersday.jpg"
+                src="./assets/images/mothersday.jpg"
                 class="card-img-top"
                 alt="Hampers"
               />
@@ -715,7 +719,7 @@
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <a href="./product.html" class="card">
               <img
-              src="./assets/images/mothersday.jpg"
+                src="./assets/images/mothersday.jpg"
                 class="card-img-top"
                 alt="FL. Bouquet"
               />
@@ -820,13 +824,20 @@
             <h5 data-i18n="Gm.general-information">General Information</h5>
             <ul class="list-unstyled mt-5">
               <li><a href="index.html" data-i18n="navbar.home">Home</a></li>
-              <li><a href="./About us.html" data-i18n="navbar.about_us">About Us</a></li>
+              <li>
+                <a href="./Aboutus.html" data-i18n="navbar.about_us"
+                  >About Us</a
+              </li>
               <li>
                 <a href="#" data-i18n="navbar.customer_service"
                   >Customer Service</a
                 >
               </li>
-              <li><a href="./contact us.html" data-i18n="navbar.contact_us">Contact Us</a></li>
+              <li>
+                 <a href="./contactus.html" data-i18n="navbar.contact_us"
+                  >Contact Us</a
+                >
+              </li>
               <li>
                 <a href="#" data-i18n="Gm.terms-conditions"
                   >Terms & Conditions</a
@@ -911,10 +922,10 @@
                 Kowloon (Near Loading Dock)
               </p>
               <a
-                href="#"
+                href="###"
                 class="btn btn-dark text-light"
                 data-i18n="footmid.chat-now"
-                ><i class="fab fa-whatsapp"></i> Chat Now</a
+                > Chat Now <i class="fa fa-commenting" aria-hidden="true"></i></a
               >
             </ul>
           </div>
@@ -1069,6 +1080,32 @@
               }
             }
           });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get the current URL path, e.g., '/index.html'
+        const currentPath = window.location.pathname.split("/").pop();
+
+        // Get all the nav links
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        // Loop through each nav link
+        navLinks.forEach((link) => {
+          // Extract the href value, e.g., 'index.html'
+          const linkPath = link.getAttribute("href").split("/").pop();
+
+          // Check if the currentPath matches the link's href
+          if (linkPath === currentPath) {
+            console.log("match");
+            // Add the 'active' class to the matching link
+            link.classList.add("active");
+          } else {
+            console.log("nomatch");
+            // Remove the 'active' class if it doesn't match
+            link.classList.remove("active");
+          }
+        });
       });
     </script>
   </body>

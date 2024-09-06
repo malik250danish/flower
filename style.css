@@ -6,6 +6,14 @@ a {
     text-decoration: none;
 }
 
+.nav-item>.nav-link:hover {
+    border-bottom: 2px solid #ffff;
+}
+
+.nav-item>.nav-link.active {
+    border-bottom: 2px solid #ffff;
+}
+
 .BigNav {
     background-color: #679966 !important;
     min-height: 100px;
@@ -536,9 +544,9 @@ h2 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 20px;
-}s
+}
 
-.mt-4 {
+s .mt-4 {
     margin-top: 1.5rem;
     /* Adjust as needed */
 }
@@ -867,13 +875,17 @@ thead {
     background-color: #679966 !important;
     color: #fff
 }
+
 .aligned-text {
-    text-indent: -2.5em; /* Adjust the value to align with the years */
-    margin-left: 7.5em;  /* Adjust the value to align with the years */
+    text-indent: -2.5em;
+    /* Adjust the value to align with the years */
+    margin-left: 7.5em;
+    /* Adjust the value to align with the years */
 }
+
 .aligned-text2 {
-    text-indent: -1.5em; 
-    margin-left: 2.5em;  
+    text-indent: -1.5em;
+    margin-left: 2.5em;
 }
 
 /* saad css end */

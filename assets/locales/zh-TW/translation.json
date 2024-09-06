@@ -61,7 +61,7 @@
   },
   "footmid": {
     "working-hours": "9:00 AM - 9:00 PM (周一至周日)",
-    "chat-now": "現在聊天",
+    "chat-now": "<i class='fa fa-commenting' aria-hidden='true'></i> 現在聊天",
     "address": "九龍紅磡民裕街41號凱旋工商中心第一期地下F舖(近卸貨碼頭)"
   },
   "footer": {
